@@ -1,0 +1,228 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.site {
+  border: 2px solid #000000;
+  padding: 50px;
+  margin: 5px;
+  background-color: rgba(38, 105, 126, 0.521);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Cabecalho {
+  width: 500px;
+  border: 2px solid #000000;
+  padding: 50px;
+  margin: 5px;
+  background-color: rgba(38, 105, 126, 0.521);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Cabecalho h1 {
+  margin: 0 0 20px 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  gap: 1px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add-task {
+  flex: 0;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(187, 161, 123);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.corpo {
+  width: 500px;
+  border: 2px solid #000000;
+  padding: 50px;
+  margin: 5px;
+  background-color: rgba(38, 105, 126, 0.521);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.corpo ul {
+  padding-right: 0px;
+}
+
+#filtros {
+  text-align: center;
+}
+#Todas {
+  flex: 0;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgba(183, 184, 192, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#Pendentes {
+  flex: 0;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(182, 153, 116);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#Concluídas {
+  flex: 0;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(17, 175, 11);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#limpar {
+  flex: 0;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: #11af0b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#task-list {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+#task-section h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#task-list li {
+  display: flex;
+  background-color: azure;
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.checkbox {
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(187, 161, 123);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.editar {
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(187, 161, 123);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.excluir {
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(187, 161, 123);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+li input .task-input {
+  display: flex;
+  left: 100;
+}
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-left: 10px;
+}
+
+footer,
+#final,
+#clearbutton {
+  width: 500px;
+  border: 2px solid #000000;
+  padding: 50px;
+  margin: 5px;
+  background-color: rgba(38, 105, 126, 0.521);
+  text-align: center;
+  margin-top: 00px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+#task-counter {
+  transition: border-color 0.3s;
+  padding: 1px;
+  margin: 0px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#clearbutton {
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background-color: rgb(187, 161, 123);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Adicione ao seu CSS existente */
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
